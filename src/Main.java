@@ -50,6 +50,11 @@ public class Main {
 
                 System.out.print("Enter name to found and I will count how many times it has been found in random names array: ");
                 nameToFound = scanner2.next();
+                nameToFound = nameToFound.toUpperCase();
+
+                for(int i = 0; i < namesFilled.length; i++){
+                    namesFilled[i] = namesFilled[i].toUpperCase();
+                }
                 for(String names : namesFilled)
                 {
                     if(names.equals(nameToFound)){
